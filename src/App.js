@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+//  import Bookings from './Hooks/Bookings';
+// import BookNow from './components/BookNow';
+// import ExploreTowers from './components/ExploreTowers';
+// import Flat from'./components/Flat';z
+// import Floor from './components/Floor';
+// import FloorNoindicator from './components/FloorNoIndicator';
+import Apartment from './components/Molecules/Apartment';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Apartment />
+      {/* <Bookings/> */}
+      {/* // <BookNow/> */}
+      {/* <ExploreTowers/> */}
+       {/* <Flat/>  */}
+      {/* <Floor/> */}
+      {/* <FloorNoindicator/> */}
+      
     </div>
   );
 }
