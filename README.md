@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Virtual Campus Exploration and Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Virtual Campus Exploration and Booking System is a web application designed to provide prospective students and visitors with a virtual tour of a campus. The system allows users to explore various parts of the campus, view detailed information about each location, and book appointments or visits.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Interactive Campus Map:** Users can navigate through an interactive map to explore different campus locations.
+- **Location Details:** Each location on the campus map provides detailed information, including images, descriptions, and videos.
+- **Booking System:** Users can book appointments or visits to specific locations or departments on the campus.
+- **User Authentication:** Secure user authentication to manage bookings and user profiles.
+- **Admin Panel:** An admin panel for managing locations, bookings, and user accounts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
+  - React.js: For building the user interface.
+  - Redux: For state management.
+  - React Router: For handling navigation.
+  - Axios: For making HTTP requests.
 
-### `npm test`
+- **Backend:**
+  - Node.js: For building the backend server.
+  - Express.js: For handling API routes.
+  - MongoDB: For the database.
+  - Mongoose: For interacting with MongoDB.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Other:**
+  - JWT (JSON Web Tokens): For user authentication.
+  - Cloudinary: For image and video storage.
+  - Google Maps API: For the interactive campus map.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js
+- npm (Node Package Manager)
+- MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/virtual-campus-exploration.git
+    cd virtual-campus-exploration
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
+    ```bash
+    npm install
+    cd client
+    npm install
+    cd ..
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add the following:
+    ```env
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+    CLOUDINARY_API_KEY=your_cloudinary_api_key
+    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    This will start both the backend server and the React development server.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Explore the Campus:**
+   - Navigate through the interactive map to explore different locations.
+   - Click on a location to view detailed information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Book a Visit:**
+   - Sign up or log in to your account.
+   - Navigate to the booking section.
+   - Select a location and choose a date and time for your visit.
 
-### Code Splitting
+3. **Admin Panel:**
+   - Log in as an admin to manage locations, bookings, and user accounts.
+   - Add, edit, or remove campus locations.
+   - View and manage user bookings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+We welcome contributions! Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or suggestions, feel free to contact us at contact mrityunjaysingh7737@gmail.com.
